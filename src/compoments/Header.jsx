@@ -16,10 +16,11 @@ const Header = () => {
 
                 <div className=' flex items-center '>
                     <div className=' relative md:w-65'>
-                        <div className=' relative md:absolute inset-y-0  flex items-center  pl-2'>
+                        <div className=' ralative md:absolute inset-y-0  flex items-center  pl-2'>
                             <span className=' text-gray-300 font-bold cursor-pointer'>franchise Portal</span>
                         </div>
                     </div>
+                    
                 </div>
 
                 <div className='text-white flex gap-2 cursor-pointer  '>

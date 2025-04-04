@@ -17,7 +17,7 @@ const TopSellingProducts = () => {
                 </thead>
                 <tbody>
                     <tr className="">
-                        <td className="py-2 px-2">Danish Mustard</td>
+                       <td className="py-2 px-2">Danish Mustard</td>
                         <td className="py-2 px-2">625</td>
                         <td className="py-2 px-2">$500.00</td>
                     </tr>

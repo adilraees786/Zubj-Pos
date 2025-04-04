@@ -1,30 +1,44 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { MdDashboard } from "react-icons/md";
 import { FcSalesPerformance } from "react-icons/fc";
-import { IoMdMenu } from "react-icons/io";
 import { useNavigate } from 'react-router';
 import logo from '../../src/assets/Images/logo.png'
 
+
 const Sidebar = () => {
     const navigate = useNavigate();
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     const handleNavigation = (path) => {
         navigate(`/${path}`);
         setIsOpen(false); // Close sidebar after navigation (for mobile)
     };
 
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsOpen(window.innerWidth > 900);
+        };
+
+        handleResize(); // Set initial state based on screen width
+
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
     return (
         <>
-
-
             {/* Sidebar */}
-            <div className={`relative h-full bg-white px-4 py-2 transition-all duration-300 ease-in-out 
+            <div className={` relative h-full bg-white px-4 py-2 transition-all duration-300 ease-in-out
                 ${isOpen ? 'w-64 left-0 ' : 'w-0 left-[-100%] md:w-64 md:left-0 md:block hidden'} `}>
+      
+
                 {/* Menu Button for Small Screens */}
-                <div className="md:hidden relative top-4 left-4 z-50">
+                {/* <div className="md:hidden relative top-4 left-4 z-50">
                     <IoMdMenu className="text-3xl cursor-pointer" onClick={() => setIsOpen(!isOpen)} />
-                </div>
+                </div> */}
                 <div className="my-2 mb-4 flex justify-between items-center">
                     <img src={logo} alt="logo" className="w-[90px] ml-8" />
                 </div>
@@ -49,3 +63,5 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+
