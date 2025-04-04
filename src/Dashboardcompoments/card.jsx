@@ -3,9 +3,9 @@ import React from "react";
 
 const Card = ({ image, title, value, color }) => (
     <div className="bg-white p-4 rounded-lg shadow-md flex items-center gap-4 ">
-        <div className="w-full">
+        <div className="w-full flex">
             <p className="text-xl font-semibold">{value}</p>
-            <p className="text-gray-600">{title}</p>
+            <p className="text-gray-600 font-bold">{title}</p>
 
         </div>
         
