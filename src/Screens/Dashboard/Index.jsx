@@ -4,6 +4,9 @@ import Card from '../../Dashboardcompoments/card';
 import Totalsales from '../../assets/Images/Totalsales.png'
 import Vector from '../../assets/Images/Vector.png'
 import Group from '../../assets/Images/Group.png'
+import user from '../../assets/Images/user.png'
+import Selling from '../../assets/Images/Selling.png'
+import lowstock from '../../assets/Images/lowstock.png'
 
 
 
@@ -18,9 +21,9 @@ const Dashboard = () => {
      <Card  image={Totalsales} color="#bfe6e1" value="$2050.00" title="Total Sales" />
      <Card  image={Vector} color="#FAB325" title="Last Weekly Sales" value="$12050.00"/>
      <Card image={Group}   color="black" title="Last Monthly Sales" value="$12050.00"/>
-     <Card  image={Vector} title="Active Register"  value="25"/>
-     <Card />
-     <Card />
+     <Card  image={user} color="#EA4093" title="Active Register"  value="25"/>
+     <Card image={Selling}  color="#2978A7" title="Top Selling Products"  value="05" />
+     <Card  image={lowstock}  color= "#FAB325" title="Low Stock"  value="15"/>
     
 
        
