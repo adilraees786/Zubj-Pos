@@ -9,7 +9,7 @@ const Card = ({ image, title, value, color }) => (
 
         </div>
     
-        <div className="h-10  w-10  ml-20 mb-10 rounded-full"  style={{ backgroundColor: color }}>
+        <div className="  w-[120px] h-[50px] ml-10 mb-10 rounded-full"  style={{ backgroundColor: color }}>
             <img src={image} alt={title} className="h-full w-full object-cover rounded-full " />
         </div>
     </div>

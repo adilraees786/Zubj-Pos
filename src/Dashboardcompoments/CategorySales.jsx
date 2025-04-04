@@ -3,7 +3,7 @@ import React from 'react'
 const CategorySales = () => {
   return (
     <div className="bg-white p-4 rounded-lg shadow-md w-full h-full">
-      <input type="date" className="w-full border border-gray-300 rounded px-2 py-1 mb-3" />
+      <input type="date" className="w-full border border-gray-300 rounded px-2 py-1 mb-3 " />
   
     <ul className="text-gray-700 w-full">
       <li>Beauty and Health - $500.00</li>

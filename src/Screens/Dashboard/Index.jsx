@@ -16,7 +16,8 @@ const Dashboard = () => {
     <div className="p-6 bg-gray-100 min-h-screen">
       <div className=" flex justify-between mb-5">
         <h1 className=" text-2xl">Sales Overview</h1>
-        <input type="date" className="  w-50 bg-white p-2" />
+        {/* <input type="date" className="  w-50 bg-white p-2" /> */}
+        <input type="date" className=" w-60 border border-gray-300 rounded px-2 py-1 mb-3 " />
       </div>
       <div className=' grid grid-cols-8 '>
         <div className=' col-span-5'>
@@ -31,7 +32,7 @@ const Dashboard = () => {
         </div>
         <div className=' col-span-3  ml-3 '>
 
-          <CriticalAlerts cl />
+          <CriticalAlerts />
 
         </div>
 
